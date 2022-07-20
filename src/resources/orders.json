@@ -1,0 +1,186 @@
+{
+  "operations": {
+    "getOrders": {
+      "httpMethod": "GET",
+      "uri": "/orders",
+      "description": "Lists and returns order information.",
+      "responseModel": "defaultJsonResponse",
+      "parameters": {
+        "since_id": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created_at_min": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "updated_at_min": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "page_size": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "page": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "query": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "status": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "shipped[before]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "shipped[after]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created[before]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created[after]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "tags":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        }
+      }
+    },
+    "getSingleOrder": {
+      "httpMethod": "GET",
+      "uri": "/orders/{id}",
+      "description": "Lists and returns order information.",
+      "responseModel": "defaultJsonResponse",
+      "parameters": {
+        "id": {
+          "type": "number",
+          "location": "uri",
+          "description": "The order ID number.",
+          "required": true
+        }
+      }
+    },
+    "getShippingOrders": {
+      "httpMethod": "GET",
+      "uri": "/orders",
+      "description": "Lists and returns order information.",
+      "responseModel": "defaultJsonResponse",
+      "parameters": {
+        "since_id": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created_at_min": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "updated_at_min": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "page_size": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "page": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "query": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "status": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "shipped[before]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "shipped[after]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created[before]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "created[after]":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "tags":{
+          "type": "string",
+          "location": "query",
+          "required": false
+        }
+      }
+    },
+    "pi": {
+      "httpMethod": "GET",
+      "uri": "/channels",
+      "description": "Lists and returns channels information.",
+      "responseModel": "defaultJsonResponse",
+      "parameters": {
+        "page_size": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        },
+        "page": {
+          "type": "string",
+          "location": "query",
+          "required": false
+        }
+      }
+    },
+    "getSingleStore": {
+      "httpMethod": "GET",
+      "uri": "/channels/{id}",
+      "description": "Lists and returns channels information.",
+      "responseModel": "defaultJsonResponse",
+      "parameters": {
+        "id": {
+          "type": "number",
+          "location": "uri",
+          "description": "The channels ID number.",
+          "required": true
+        }
+      }
+    }
+  }
+}

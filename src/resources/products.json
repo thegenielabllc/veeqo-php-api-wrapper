@@ -1,0 +1,56 @@
+{
+    "operations": {
+        "getProducts": {
+            "httpMethod": "GET",
+            "uri": "/products",
+            "description": "Lists and returns product information.",
+            "responseModel": "defaultJsonResponse",
+            "parameters": {
+                "since_id": {
+                    "type": "integer",
+                    "location": "query",
+                    "required": false
+                },
+                "created_at_min": {
+                    "type": "string",
+                    "location": "query",
+                    "required": false
+                },
+                "updated_at_min": {
+                    "type": "string",
+                    "location": "query",
+                    "required": false
+                },
+                "page_size": {
+                    "type": "integer",
+                    "location": "query",
+                    "required": false
+                },
+                "page": {
+                    "type": "integer",
+                    "location": "query",
+                    "required": false
+                },
+                "query": {
+                    "type": "string",
+                    "location": "query",
+                    "required": false
+                }
+            }
+        },
+      "getSingleProduct": {
+        "httpMethod": "GET",
+        "uri": "/products/{id}",
+        "description": "Lists and returns product information.",
+        "responseModel": "defaultJsonResponse",
+        "parameters": {
+          "id": {
+            "type": "number",
+            "location": "uri",
+            "description": "The product ID number.",
+            "required": true
+          }
+        }
+      }
+    }
+}

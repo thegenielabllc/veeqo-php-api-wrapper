@@ -1,0 +1,52 @@
+{
+    "operations": {
+        "getCustomers": {
+            "httpMethod": "GET",
+            "uri": "/customers",
+            "description": "Lists and returns customer information.",
+            "responseModel": "defaultJsonResponse",
+            "parameters": {
+                "page_size": {
+                    "type": "integer",
+                    "location": "query",
+                    "required": false
+                },
+                "page": {
+                    "type": "integer",
+                    "location": "query",
+                    "required": false
+                },
+                "created_at_min": {
+                    "type": "string",
+                    "location": "query",
+                    "required": false
+                },
+                "updated_at_min": {
+                    "type": "string",
+                    "location": "query",
+                    "required": false
+                }
+            }
+        },
+        "getCompany": {
+            "httpMethod": "GET",
+            "uri": "/current_company",
+            "description": "Get Company Detail.",
+            "responseModel": "defaultJsonResponse"
+        },
+      "getSingleCustomer": {
+        "httpMethod": "GET",
+        "uri": "/customers/{id}",
+        "description": "Lists and returns customer information.",
+        "responseModel": "defaultJsonResponse",
+        "parameters": {
+          "id": {
+            "type": "number",
+            "location": "uri",
+            "description": "The customer ID number.",
+            "required": true
+          }
+        }
+      }
+    }
+}
