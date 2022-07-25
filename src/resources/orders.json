@@ -150,7 +150,7 @@
         }
       }
     },
-    "pi": {
+    "getStores": {
       "httpMethod": "GET",
       "uri": "/channels",
       "description": "Lists and returns channels information.",
