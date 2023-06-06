@@ -9,7 +9,7 @@ use Symfony\Component\Config\FileLocator;
 class Client
 {
 
-    const VEEQO_API_URL = 'http://api.veeqo.com';
+    const VEEQO_API_URL = 'https://api.veeqo.com';
 
     /**
      * Guzzle service description
